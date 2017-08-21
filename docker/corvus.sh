@@ -9,4 +9,4 @@ if [ -z "${dir}" ];then
   mv /opt/corvus-0.2.6 /opt/corvus
 fi
 
-/opt/corvus/src/corvus /opt/corvus/src/corvus.conf && tail -f /dev/null
+/opt/corvus/src/corvus /opt/corvus/corvus.conf && tail -f /dev/null
