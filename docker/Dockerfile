@@ -5,6 +5,7 @@ MAINTAINER waterchestnut
 RUN apt-get update
 RUN apt-get install -y software-properties-common python-software-properties
 RUN add-apt-repository ppa:ubuntu-desktop/ubuntu-make
+RUN apt-get update
 RUN apt-get install -y ubuntu-make
 
 ADD   corvus-0.2.6.tar.gz  /src
