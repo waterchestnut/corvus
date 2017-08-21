@@ -1,11 +1,8 @@
 # corvus 0.2.6
-FROM ubuntu:trusty
+FROM golang:latest
 MAINTAINER waterchestnut
 
 RUN apt-get update
-RUN apt-get install -y software-properties-common python-software-properties
-RUN apt-get update
-RUN apt-get install -y make
 RUN apt-get install -y autoconf && \
       apt-get clean autoclean && \
       apt-get autoremove -y && \
