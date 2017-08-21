@@ -3,7 +3,7 @@ FROM ubuntu:trusty
 MAINTAINER waterchestnut
 
 RUN apt-get update
-RUN apt-get install software-properties-common python-software-properties
+RUN apt-get install -y software-properties-common python-software-properties
 RUN add-apt-repository ppa:ubuntu-desktop/ubuntu-make
 RUN apt-get install -y ubuntu-make
 
