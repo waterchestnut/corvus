@@ -6,6 +6,10 @@ RUN apt-get update
 RUN apt-get install -y software-properties-common python-software-properties
 RUN apt-get update
 RUN apt-get install -y make
+RUN apt-get install -y autoconf && \
+      apt-get clean autoclean && \
+      apt-get autoremove -y && \
+      rm -rf /var/lib/apt/lists/*
 
 ADD   corvus-0.2.6.tar.gz  /src
 WORKDIR /src/corvus-0.2.6
